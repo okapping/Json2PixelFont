@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json2PixelFont</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Json2PixelFont</h1>
+
+      <section>
+        <h2>フォント情報</h2>
+
+        <label>
+          フォント名
+          <input
+            id="familyName"
+            type="text"
+            value="My Pixel Font"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          スタイル名
+          <input
+            id="styleName"
+            type="text"
+            value="Regular"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          フルネーム
+          <input
+            id="fullName"
+            type="text"
+            value="My Pixel Font Regular"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          バージョン
+          <input
+            id="version"
+            type="text"
+            value="Version 1.0"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          作者・製作者
+          <input
+            id="designer"
+            type="text"
+            value="Your Name"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          メーカー
+          <input
+            id="manufacturer"
+            type="text"
+            value="Your Name"
+          />
+        </label>
+      </section>
+
+      <section>
+        <h2>フォントサイズ設定</h2>
+
+        <label>
+          Units Per Em
+          <input
+            id="unitsPerEm"
+            type="number"
+            value="1000"
+            min="1"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          Ascender
+          <input
+            id="ascender"
+            type="number"
+            value="800"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          Descender
+          <input
+            id="descender"
+            type="number"
+            value="-200"
+          />
+        </label>
+
+        <br />
+
+        <label>
+          文字間隔
+          <input
+            id="letterSpacing"
+            type="number"
+            value="0"
+          />
+        </label>
+      </section>
+
+      <section>
+        <h2>JSONファイル</h2>
+
+        <input
+          id="json"
+          type="file"
+          accept=".json,application/json"
+        />
+
+        <br /><br />
+
+        <button id="generate" type="button">
+          フォントを生成
+        </button>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+    <footer>
+      © 2026 okapping <a href="https://github.com/okapping/Json2PixelFont">github</a>
+    </footer>
+  </body>
+</html>
